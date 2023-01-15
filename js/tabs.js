@@ -2,6 +2,7 @@ const tabsBtn = document.querySelectorAll('.tabs__nav-btn');
 const tabsItems = document.querySelectorAll('.tabs__item');
 const btnsMore = document.querySelectorAll('.btn_more');
 const moreItems = document.querySelectorAll('.apartments__more__wrap');
+const moreWrap = document.querySelectorAll('.apartments__more');
 
 tabsBtn.forEach((item) => {
     item.addEventListener('click', () => {
@@ -44,5 +45,12 @@ btnsMore.forEach((item) => {
             })
         })
 
+    })
+})
+btnsMore.forEach((item) => {
+    item.addEventListener('click', () => {
+        moreWrap.forEach((item) => {
+            item.classList.toggle('active')
+        })
     })
 })
