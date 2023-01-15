@@ -643,7 +643,9 @@
   margin-top: 75px;
   margin-bottom: 75px;
 }
-
+.apartments__more.active {
+    display: none;
+}
 .apartments__more__img-box img {
   width: 100%;
   -o-object-fit: cover;
